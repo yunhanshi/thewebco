@@ -1,0 +1,140 @@
+{
+    "admin_bizs": {
+        "id": "bigint",
+        "admin_id": "bigint",
+        "biz_id": "bigint",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    },
+    "admins": {
+        "id": "bigint",
+        "name": "varchar",
+        "email": "varchar",
+        "email_verified_at": "timestamp",
+        "password": "varchar",
+        "mobile": "varchar",
+        "level": "tinyint",
+        "remember_token": "varchar",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    },
+    "app_login_sessions": {
+        "id": "bigint",
+        "uuid": "varchar",
+        "biz_id": "bigint",
+        "biz_app_id": "bigint",
+        "app_id": "varchar",
+        "app_type": "bigint",
+        "app_user_id": "bigint",
+        "callback": "varchar",
+        "status": "tinyint",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    },
+    "app_users": {
+        "id": "bigint",
+        "uni_user_id": "varchar",
+        "biz_id": "varchar",
+        "biz_app_id": "varchar",
+        "app_type": "tinyint",
+        "open_id": "varchar",
+        "union_id": "varchar",
+        "nickname": "varchar",
+        "head_img_url": "varchar",
+        "city": "varchar",
+        "province": "varchar",
+        "country": "varchar",
+        "sex": "tinyint",
+        "created_at": "timestamp",
+        "updated_at": "timestamp",
+        "deleted_at": "timestamp"
+    },
+    "biz_apps": {
+        "id": "bigint",
+        "biz_id": "bigint",
+        "app_type": "tinyint",
+        "app_id": "varchar",
+        "app_secret": "varchar",
+        "ext": "text",
+        "desc": "varchar",
+        "status": "tinyint",
+        "created_at": "timestamp",
+        "updated_at": "timestamp",
+        "deleted_at": "timestamp"
+    },
+    "biz_user_binds": {
+        "id": "bigint",
+        "biz_id": "bigint",
+        "biz_app_id": "bigint",
+        "biz_user_id": "bigint",
+        "uni_user_id": "varchar",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    },
+    "bizs": {
+        "id": "bigint",
+        "name": "varchar",
+        "desc": "varchar",
+        "status": "tinyint",
+        "created_at": "timestamp",
+        "updated_at": "timestamp",
+        "deleted_at": "timestamp"
+    },
+    "failed_jobs": {
+        "id": "bigint",
+        "connection": "text",
+        "queue": "text",
+        "payload": "longtext",
+        "exception": "longtext",
+        "failed_at": "timestamp"
+    },
+    "migrations": {
+        "id": "int",
+        "migration": "varchar",
+        "batch": "int"
+    },
+    "model_has_permissions": {
+        "permission_id": "int",
+        "model_type": "varchar",
+        "model_id": "bigint"
+    },
+    "model_has_roles": {
+        "role_id": "int",
+        "model_type": "varchar",
+        "model_id": "bigint"
+    },
+    "password_resets": {
+        "email": "varchar",
+        "token": "varchar",
+        "created_at": "timestamp"
+    },
+    "permissions": {
+        "id": "int",
+        "name": "varchar",
+        "guard_name": "varchar",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    },
+    "personal_access_tokens": {
+        "id": "bigint",
+        "tokenable_type": "varchar",
+        "tokenable_id": "bigint",
+        "name": "varchar",
+        "token": "varchar",
+        "abilities": "text",
+        "last_used_at": "timestamp",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    },
+    "role_has_permissions": {
+        "permission_id": "int",
+        "role_id": "int"
+    },
+    "roles": {
+        "id": "int",
+        "name": "varchar",
+        "guard_name": "varchar",
+        "created_at": "timestamp",
+        "updated_at": "timestamp"
+    }
+}
