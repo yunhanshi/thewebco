@@ -1,7 +1,7 @@
 # The web co coding test solution
 This is a practical assessment for The web co, this solutions base [Laravel 8](https://laravel.com/) and [Vue.js 3](https://github.com/vuejs/vue). 
 
-![screenshot](https://github.com/yunhanshi/thewebco/tree/main/screenshot/screenshot.png)
+![screenshot](screenshot/screenshot.jpg)
 
 ## Installing
 
